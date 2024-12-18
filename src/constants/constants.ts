@@ -14,6 +14,20 @@ export const clockData: Record<string, ClockInfo> = {
     latitude: 40.7128,
     longitude: -74.006,
   },
+  Stockholm: {
+    city: "Stockholm",
+    timeZone: "Europe/Stockholm",
+    country: "Sweden",
+    latitude: 59.3293,
+    longitude: 18.0686,
+  },
+  "New Delhi": {
+    city: "New Delhi",
+    timeZone: "Asia/Kolkata",
+    country: "India",
+    latitude: 28.6139,
+    longitude: 77.209,
+  },
   London: {
     city: "London",
     timeZone: "Europe/London",
@@ -27,6 +41,13 @@ export const clockData: Record<string, ClockInfo> = {
     country: "Japan",
     latitude: 35.6762,
     longitude: 139.6503,
+  },
+  "Hong Kong": {
+    city: "Hong Kong",
+    timeZone: "Asia/Hong_Kong",
+    country: "Hong Kong",
+    latitude: 22.3193,
+    longitude: 114.1694,
   },
   Sydney: {
     city: "Sydney",
@@ -49,5 +70,32 @@ export const clockData: Record<string, ClockInfo> = {
     latitude: 22.3193,
     longitude: 114.1694,
   },
-  // Add more cities as needed
+  Kabul: {
+    city: "Kabul",
+    timeZone: "Asia/Kabul",
+    country: "Afghanistan",
+    latitude: 34.5553,
+    longitude: 69.2075,
+  },
+  Tehran: {
+    city: "Tehran",
+    timeZone: "Asia/Tehran",
+    country: "Iran",
+    latitude: 35.6895,
+    longitude: 51.594,
+  },
+  Cairo: {
+    city: "Cairo",
+    timeZone: "Africa/Cairo",
+    country: "Egypt",
+    latitude: 30.033,
+    longitude: 31.2336,
+  },
+  Moscow: {
+    city: "Moscow",
+    timeZone: "Europe/Moscow",
+    country: "Russia",
+    latitude: 55.7558,
+    longitude: 37.6176,
+  },
 };
