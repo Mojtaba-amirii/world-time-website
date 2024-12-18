@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
-import { clockData } from "../constants/constants";
 import { ArrowLeft, MapPin } from "lucide-react";
+import { useParams, Link } from "react-router-dom";
+
+import { clockData } from "../constants/constants";
 
 const SingleClock = () => {
   const { city } = useParams<{ city: string }>();
@@ -38,7 +39,7 @@ const SingleClock = () => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8">
       <Link
         to="/"
         className="inline-flex items-center space-x-2 text-indigo-600 hover:text-indigo-800 mb-4"
@@ -46,7 +47,7 @@ const SingleClock = () => {
         <ArrowLeft className="h-4 w-4" />
         <span>Back to World Clock</span>
       </Link>
-      <div className="bg-white rounded-lg shadow-lg p-6 mt-4 dark:bg-gray-800">
+      <section className="bg-white rounded-lg shadow-lg p-6 mt-4 dark:bg-gray-800">
         <h1 className="text-3xl font-bold text-gray-800 mb-4 dark:text-white">
           {clockInfo.city}
         </h1>
@@ -90,8 +91,8 @@ const SingleClock = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 };
 

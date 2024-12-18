@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -7,7 +8,6 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SingleClock from "./components/SingleClock";
-import { useState } from "react";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");

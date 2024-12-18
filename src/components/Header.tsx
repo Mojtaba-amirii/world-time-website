@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import { FC } from "react";
+
 import Navbar from "./Navbar";
 import { SearchCities } from "./SearchCities ";
-import { FC } from "react";
 
 interface HeaderProps {
   onSearch: (searchTerm: string) => void;

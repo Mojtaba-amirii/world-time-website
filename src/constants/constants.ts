@@ -1,10 +1,4 @@
-type ClockInfo = {
-  city: string;
-  timeZone: string;
-  country: string;
-  latitude: number;
-  longitude: number;
-};
+import { City, ClockInfo } from "../types/types";
 
 export const clockData: Record<string, ClockInfo> = {
   "New York": {
@@ -99,3 +93,18 @@ export const clockData: Record<string, ClockInfo> = {
     longitude: 37.6176,
   },
 };
+
+export const allCities: City[] = [
+  { city: "Stockholm", timeZone: "Europe/Stockholm" },
+  { city: "New Delhi", timeZone: "Asia/Kolkata" },
+  { city: "New York", timeZone: "America/New_York" },
+  { city: "Sydney", timeZone: "Australia/Sydney" },
+  { city: "Tokyo", timeZone: "Asia/Tokyo" },
+  { city: "London", timeZone: "Europe/London" },
+  { city: "Dubai", timeZone: "Asia/Dubai" },
+  { city: "Hong Kong", timeZone: "Asia/Hong_Kong" },
+  { city: "Kabul", timeZone: "Asia/Kabul" },
+  { city: "Tehran", timeZone: "Asia/Tehran" },
+  { city: "Cairo", timeZone: "Africa/Cairo" },
+  { city: "Moscow", timeZone: "Europe/Moscow" },
+];

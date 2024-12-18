@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-gray-800 mb-6">
         About World Time Clock
       </h1>
@@ -70,7 +70,7 @@ const About = () => {
           </div>
         </section>
       </div>
-    </div>
+    </main>
   );
 };
 

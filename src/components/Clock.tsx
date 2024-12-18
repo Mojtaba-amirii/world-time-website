@@ -36,7 +36,7 @@ const Clock: FC<ClockProps> = ({ city, timeZone }) => {
   }, [timeZone]);
 
   return (
-    <div className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-lg transition-all hover:shadow-xl dark:bg-gray-800">
+    <section className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-lg transition-all hover:shadow-xl dark:bg-gray-800">
       <div className="absolute right-0 top-0 p-4">
         {isDaytime ? (
           <Sun className="h-6 w-6 text-amber-400" />
@@ -70,7 +70,7 @@ const Clock: FC<ClockProps> = ({ city, timeZone }) => {
       </div>
 
       <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-indigo-500 to-purple-500 opacity-0 transition-opacity group-hover:opacity-100" />
-    </div>
+    </section>
   );
 };
 
