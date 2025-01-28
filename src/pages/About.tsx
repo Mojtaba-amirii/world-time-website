@@ -57,13 +57,13 @@ const About = () => {
           <div className="flex space-x-4">
             <Link
               to="/"
-              className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition-colors duration-300"
+              className="bg-indigo-600 text-white px-4 py-2 rounded-sm hover:bg-indigo-700 transition-colors duration-300"
             >
               View World Clock
             </Link>
             <Link
               to="/contact"
-              className="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300 transition-colors duration-300"
+              className="bg-gray-200 text-gray-800 px-4 py-2 rounded-sm hover:bg-gray-300 transition-colors duration-300"
             >
               Contact Us
             </Link>

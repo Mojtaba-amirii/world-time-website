@@ -81,7 +81,7 @@ const Contact = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-indigo-300 focus:ring-3 focus:ring-indigo-200 focus:ring-opacity-50"
                   required
                 />
               </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   name="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-indigo-300 focus:ring-3 focus:ring-indigo-200 focus:ring-opacity-50"
                   required
                 />
               </div>
@@ -111,13 +111,13 @@ const Contact = () => {
                   id="message"
                   name="message"
                   rows={4}
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-indigo-300 focus:ring-3 focus:ring-indigo-200 focus:ring-opacity-50"
                   required
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 transition-colors duration-300"
+                className="w-full bg-indigo-600 text-white px-4 py-2 rounded-sm hover:bg-indigo-700 focus:outline-hidden focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-50 transition-colors duration-300"
               >
                 Send Message
               </button>

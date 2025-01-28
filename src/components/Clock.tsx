@@ -69,7 +69,7 @@ const Clock: FC<ClockProps> = ({ city, timeZone }) => {
         </Link>
       </div>
 
-      <div className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-indigo-500 to-purple-500 opacity-0 transition-opacity group-hover:opacity-100" />
+      <div className="absolute bottom-0 left-0 h-1 w-full bg-linear-to-r from-indigo-500 to-purple-500 opacity-0 transition-opacity group-hover:opacity-100" />
     </section>
   );
 };
