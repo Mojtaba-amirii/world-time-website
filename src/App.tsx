@@ -1,12 +1,12 @@
-import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import Home from "./pages/Home";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import SingleClock from "./components/SingleClock";
 
 function App() {

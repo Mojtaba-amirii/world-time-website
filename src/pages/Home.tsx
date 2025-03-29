@@ -1,8 +1,8 @@
 import { useState, useEffect, FC } from "react";
 
+import { City } from "../types/types";
 import Clock from "../components/Clock";
 import { allCities } from "../constants/constants";
-import { City } from "../types/types";
 
 interface HomeProps {
   searchTerm: string;
