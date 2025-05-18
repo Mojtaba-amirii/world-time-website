@@ -1,5 +1,6 @@
+import { LuMapPin } from "react-icons/lu";
 import { useEffect, useState } from "react";
-import { ArrowLeft, MapPin } from "lucide-react";
+import { BsArrowLeftShort } from "react-icons/bs";
 import { useParams, Link } from "react-router-dom";
 
 import { clockData } from "../constants/constants";
@@ -44,7 +45,7 @@ const SingleClock = () => {
         to="/"
         className="inline-flex items-center space-x-2 text-indigo-600 hover:text-indigo-800 mb-4"
       >
-        <ArrowLeft className="h-4 w-4" />
+        <BsArrowLeftShort className="h-7 w-7" />
         <span>Back to World Clock</span>
       </Link>
       <section className="bg-white rounded-lg shadow-lg p-6 mt-4 dark:bg-gray-800">
@@ -85,7 +86,7 @@ const SingleClock = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 text-indigo-600 hover:text-indigo-800 dark:text-indigo-400 dark:hover:text-indigo-300"
               >
-                <MapPin className="h-4 w-4" />
+                <LuMapPin className="h-4 w-4" />
                 <span>View on Google Maps</span>
               </a>
             </div>

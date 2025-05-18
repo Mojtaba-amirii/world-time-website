@@ -1,6 +1,7 @@
-import { FC, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ClockIcon, Info, Sun, Moon } from "lucide-react";
+import { FC, useEffect, useState } from "react";
+import { FiClock, FiInfo } from "react-icons/fi";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 type ClockProps = { city: string; timeZone: string };
 
@@ -39,9 +40,9 @@ const Clock: FC<ClockProps> = ({ city, timeZone }) => {
     <section className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-lg transition-all hover:shadow-xl dark:bg-gray-800">
       <div className="absolute right-0 top-0 p-4">
         {isDaytime ? (
-          <Sun className="h-6 w-6 text-amber-400" />
+          <BsSun className="h-6 w-6 text-amber-400" />
         ) : (
-          <Moon className="h-6 w-6 text-blue-400" />
+          <BsMoon className="h-6 w-6 text-blue-400" />
         )}
       </div>
 
@@ -54,7 +55,7 @@ const Clock: FC<ClockProps> = ({ city, timeZone }) => {
         </div>
 
         <div className="flex items-center space-x-2">
-          <ClockIcon className="h-5 w-5 text-gray-400" />
+          <FiClock className="h-5 w-5 text-gray-400" />
           <span className="font-mono text-3xl font-bold tracking-wider text-gray-900 dark:text-gray-100">
             {time}
           </span>
@@ -65,7 +66,7 @@ const Clock: FC<ClockProps> = ({ city, timeZone }) => {
           className="inline-flex items-center space-x-2 text-sm text-indigo-600 transition-colors hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
         >
           <span>More Details</span>
-          <Info className="h-4 w-4" />
+          <FiInfo className="h-4 w-4" />
         </Link>
       </div>
 
