@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
+import { BsSun, BsMoon } from "react-icons/bs";
 import { FC, useEffect, useState } from "react";
 import { FiClock, FiInfo } from "react-icons/fi";
-import { BsSun, BsMoon } from "react-icons/bs";
 
 type ClockProps = { city: string; timeZone: string };
 
