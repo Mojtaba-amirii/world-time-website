@@ -1,6 +1,5 @@
-import { useState, useEffect, FC } from "react";
+import { useMemo, FC } from "react";
 
-import { City } from "../types/types";
 import Clock from "../components/Clock";
 import { allCities } from "../constants/constants";
 
@@ -9,13 +8,10 @@ interface HomeProps {
 }
 
 const Home: FC<HomeProps> = ({ searchTerm }) => {
-  const [filteredCities, setFilteredCities] = useState<City[]>(allCities);
-
-  useEffect(() => {
-    const filtered = allCities.filter((city) =>
+  const filteredCities = useMemo(() => {
+    return allCities.filter((city) =>
       city.city.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    setFilteredCities(filtered);
   }, [searchTerm]);
 
   return (
